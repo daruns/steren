@@ -1,7 +1,7 @@
 import axios from "axios"
 import { DEALER_AUTH, LOGIN_FAILURE, LOGIN_REQUEST, LOGIN_SUCCESS, SIGNUP_SUCCESS } from "./actionType";
 
-let url = "https://attryb-backend-blond.vercel.app"
+let url = process.env.BACKEND_URL
 export const fetchLogin = (payload) => (dispatch) => {
 
     

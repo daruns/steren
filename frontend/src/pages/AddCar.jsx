@@ -38,7 +38,7 @@ const AddCar = () => {
     const debounceTimer = setTimeout(() => {
       if (search !== "") {
         axios
-          .get(`https://attryb-backend-blond.vercel.app/oem/specs?q=${search}`)
+          .get(`${process.env.BACKEND_URL}/oem/specs?q=${search}`)
           .then((res) => {
             console.log(res.data);
             setOemSpecsData(res.data.specification);

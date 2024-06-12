@@ -7,7 +7,7 @@ import {
   GET_CAR_SUCCSESS,
 } from "./actionType";
 
-let url = "https://attryb-backend-blond.vercel.app";
+let url = process.env.BACKEND_URL;
 
 export const getCars = (params) => (dispatch) => {
   if (
